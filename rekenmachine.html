@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button {
+            color: black;
+            background-color: yellow;
+        }
+    </style>
+    <script>
+
+        function maal1() {
+
+            // Uitlezen
+            var element1 = parseInt(document.getElementById('invoer1').value);
+            var element2 = parseInt(document.getElementById('invoer2').value);
+
+            document.getElementById('antwoord').innerText = element1 * element2;
+        }
+
+        function plus1() {
+
+            // Uitlezen
+            var element1 = parseInt(document.getElementById('invoer1').value);
+            var element2 = parseInt(document.getElementById('invoer2').value);
+
+            document.getElementById('antwoord').innerText = element1 + element2;
+        }
+
+        function min1() {
+
+            // Uitlezen
+            var element1 = parseInt(document.getElementById('invoer1').value);
+            var element2 = parseInt(document.getElementById('invoer2').value);
+
+            document.getElementById('antwoord').innerText = element1 - element2;
+        }
+
+        function delen1() {
+
+            // Uitlezen
+            var element1 = parseInt(document.getElementById('invoer1').value);
+            var element2 = parseInt(document.getElementById('invoer2').value);
+
+            document.getElementById('antwoord').innerText = element1 / element2;
+        }
+
+
+    </script>
+</head>
+<body>
+    <input type="number" id="invoer1">
+    <input type="number" id="invoer2">
+
+    <button type="button" onclick="plus1()">
+        +
+    </button>
+    <button type="button" onclick="min1()">
+        -
+    </button>
+    <button type="button" onclick="maal1()">
+        *
+    </button>
+    <button type="button" onclick="delen1()">
+        /
+    </button>
+    
+    <br>
+    <span>Het antwoord is :</span>
+    <span id="antwoord"></span>
+</body>
+</html>

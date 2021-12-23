@@ -1,0 +1,94 @@
+<!-- Martijn Hiemstra -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        span {
+            color: blue;
+        }
+
+        .mijnspan {
+            color: brown;
+        }
+
+        #mijnafbeelding {
+            width: 10%;
+            border: 5px dashed blue;
+        }
+        
+        /* Spatie gevoelig */
+        li:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>Mijn ?de pagina</h1>
+
+    <p style="color: red; font-size: 200%;">Dit is mijn ?de pagina met tekst</p>
+
+    <span class="mijnspan mijnspan2">Dit is mijn span tekst.</span>
+    <span>Dit komt er achteraan</span>
+
+    <img id="mijnafbeelding" src="https://upload.wikimedia.org/wikipedia/en/thumb/3/30/Java_programming_language_logo.svg/800px-Java_programming_language_logo.svg.png">
+
+    <ul>
+        <li>Optie 1</li>
+        <li>Optie 2</li>
+        <li>Optie 3</li>
+    </ul>
+
+    <ol>
+        <li>Optie 1</li>
+        <li>Optie 2</li>
+        <li>Optie 3</li>
+        <li>Optie 4</li>
+    </ol>
+
+    <span class="mijnspan">Table</span>
+    <span> (r,c):</span>
+    <table>
+        <tr>
+            <td>(1,1)</td>
+            <td>(1,2)</td>
+        </tr>
+        <tr>
+            <td>(2,1)</td>
+            <td>(2,2)</td>
+        </tr>
+    </table>
+
+    <!-- Table bestaat uit een head, body en footer -->
+    <table>
+        <thead>
+            <tr>
+                <th>Mijn eerste kolom</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Mijn eerste cell</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <!-- Browser doet zijn best om het te intepreteren ook al mist er iets:-->
+            <!-- <tr>-->
+            <td>Footer 1</td>
+            <td>Footer 2</td>
+            <!-- </tr>-->             
+        </tfoot>
+    </table>
+
+    <!--Div is een container, of block. Het wordt gebruikt voor structuur. (Grid)-->
+    <div>
+        <div>Div 1</div>
+        <div>Div 2</div>
+    </div>
+
+</body>
+</html>
